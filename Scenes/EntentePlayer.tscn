@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c7m3qax5n2k8f"]
+
+[ext_resource type="Script" uid="uid://bxbob3jyexhyw" path="res://Script/player.gd" id="1_plr"]
+[ext_resource type="Script" path="res://Script/entente_animator.gd" id="2_eanim"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_eplyr"]
+
+[node name="EntentePlayer" type="CharacterBody3D"]
+collision_layer = 4
+collision_mask = 13
+script = ExtResource("1_plr")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_eplyr")
+
+[node name="AnimationPlayer" type="Node3D" parent="."]
+script = ExtResource("2_eanim")

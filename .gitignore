@@ -1,0 +1,46 @@
+# ==========================================================================
+#  Godot 4 import cache — ALWAYS regenerated on open. Never commit (~15 GB).
+# ==========================================================================
+.godot/
+
+# ==========================================================================
+#  Large binary assets are intentionally NOT tracked in this repository.
+#  They total ~12 GB and dozens exceed GitHub's 100 MB per-file limit, so a
+#  plain `git push` cannot carry them. The complete, runnable project —
+#  including this Assets/ folder — is delivered as a separate zip.
+#  See README.md → "Getting the full, runnable project".
+# ==========================================================================
+Assets/
+
+# ==========================================================================
+#  Godot autosave / crash leftovers
+# ==========================================================================
+*.tscn*.tmp
+*.tres*.tmp
+*.tmp
+
+# ==========================================================================
+#  Godot export output & editor-local files
+# ==========================================================================
+export_presets.cfg
+*.pck
+*.exe
+*.zip
+*.dll
+*.pdb
+# Godot .NET export runtime folder (data_<AssemblyName>_<platform>/)
+data_Armistice_*/
+
+# ==========================================================================
+#  OS / editor cruft
+# ==========================================================================
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ==========================================================================
+#  Claude Code / AI assistant local files — NOT part of the project.
+#  (Note: addons/fuku/backends/claude_backend.gd IS project code and stays.)
+# ==========================================================================
+CLAUDE.md
+.claude/

@@ -1,0 +1,55 @@
+# ==========================================================================
+#  Prevents the "corrupted textures" bug.
+#
+#  Without this, Git on Windows (core.autocrlf) may treat binary files as
+#  text and rewrite CRLF <-> LF *inside* them, silently corrupting PNGs,
+#  FBX, fonts, etc. Every binary type below is pinned to `binary` so Git
+#  never touches its bytes; text types are pinned to LF so code stays clean.
+# ==========================================================================
+
+# Default: let Git detect text and normalize to LF in the repo.
+* text=auto eol=lf
+
+# --- Source / text (explicit LF, no CRLF churn) ---------------------------
+*.gd        text eol=lf
+*.cs        text eol=lf
+*.tscn      text eol=lf
+*.tres      text eol=lf
+*.godot     text eol=lf
+*.cfg       text eol=lf
+*.csv       text eol=lf
+*.md        text eol=lf
+*.json      text eol=lf
+*.gdshader  text eol=lf
+*.import    text eol=lf
+.gitignore    text eol=lf
+.gitattributes text eol=lf
+
+# --- Binary (NEVER convert line endings) ----------------------------------
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.webp  binary
+*.tga   binary
+*.bmp   binary
+*.exr   binary
+*.hdr   binary
+*.svg   binary
+*.fbx   binary
+*.FBX   binary
+*.glb   binary
+*.gltf  binary
+*.blend binary
+*.obj   binary
+*.dae   binary
+*.mp3   binary
+*.ogg   binary
+*.wav   binary
+*.ttf   binary
+*.otf   binary
+*.woff  binary
+*.woff2 binary
+*.ctex  binary
+*.scn   binary
+*.res   binary
+*.unwrap_cache binary

@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://di3vpycrgf7ml"]
+
+[ext_resource type="Script" uid="uid://b7tcv8lcadbk8" path="res://Script/intro2.gd" id="1_5fgoc"]
+[ext_resource type="Texture2D" uid="uid://lya23unbajib" path="res://Assets/img/splash-unipi.png" id="2_pr61r"]
+
+[sub_resource type="Animation" id="Animation_sb8jg"]
+resource_name = "Black_in"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_33sem"]
+resource_name = "Black_out"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_vltdc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_33sem"]
+_data = {
+&"Black_in": SubResource("Animation_sb8jg"),
+&"Black_out": SubResource("Animation_33sem"),
+&"RESET": SubResource("Animation_vltdc")
+}
+
+[node name="Intro" type="Control" unique_id=124022335]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5fgoc")
+
+[node name="Splash" type="Sprite2D" parent="." unique_id=1115212824]
+position = Vector2(960, 540)
+texture = ExtResource("2_pr61r")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1805676184]
+layout_mode = 0
+offset_left = -30.0
+offset_top = -30.0
+offset_right = 1969.0
+offset_bottom = 1120.0
+color = Color(0, 0, 0, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1231497611]
+libraries/ = SubResource("AnimationLibrary_33sem")

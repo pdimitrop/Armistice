@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://d00drbaajhyp7"]
+
+[ext_resource type="AudioStream" uid="uid://dksrw56ir5kyf" path="res://Assets/Sound/It's a long way to Tipperary.mp3" id="1_p1osb"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" unique_id=1928838249]
+stream = ExtResource("1_p1osb")
+autoplay = true

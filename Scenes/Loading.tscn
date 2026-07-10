@@ -1,0 +1,139 @@
+[gd_scene format=3 uid="uid://dnumyglvslh6f"]
+
+[ext_resource type="Script" uid="uid://cia3trfnl71f6" path="res://Script/loading.gd" id="1_sid5e"]
+[ext_resource type="Texture2D" uid="uid://crvgrrrsj35j2" path="res://Assets/img/Loading.png" id="2_0pxc8"]
+[ext_resource type="Script" uid="uid://0a0idxf4pl7l" path="res://Script/SpinnerDecor.gd" id="2_dhtv6"]
+[ext_resource type="Shader" uid="uid://bmjiplpla2xkd" path="res://Scenes/Loading.gdshader" id="2_hgo68"]
+[ext_resource type="Script" uid="uid://cmwe4xk6od4c1" path="res://Script/RingProgress.gd" id="3_hgo68"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0pxc8"]
+shader = ExtResource("2_hgo68")
+
+[node name="Loading" type="Control" unique_id=1104329764]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sid5e")
+
+[node name="BG" type="ColorRect" parent="." unique_id=433791002]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.050980393, 0.101960786, 0.050980393, 1)
+
+[node name="TestBG" type="Sprite2D" parent="." unique_id=87487557]
+modulate = Color(0.19607843, 0.19607843, 0.19607843, 1)
+position = Vector2(960, 540)
+texture = ExtResource("2_0pxc8")
+
+[node name="VignetteOverlay" type="ColorRect" parent="." unique_id=408591611]
+material = SubResource("ShaderMaterial_0pxc8")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CentreContainer" type="CenterContainer" parent="." unique_id=1117223710]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CentreContainer" unique_id=624105221]
+layout_mode = 2
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 60
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 60
+
+[node name="MainLayout" type="HBoxContainer" parent="CentreContainer/MarginContainer" unique_id=244150090]
+layout_mode = 2
+theme_override_constants/separation = 64
+alignment = 1
+
+[node name="LeftSide" type="VBoxContainer" parent="CentreContainer/MarginContainer/MainLayout" unique_id=28769808]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="QuoteMark" type="Label" parent="CentreContainer/MarginContainer/MainLayout/LeftSide" unique_id=835300387]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.23921569, 0.8627451, 0.5176471, 0.4)
+theme_override_font_sizes/font_size = 72
+text = "\""
+
+[node name="QuoteText" type="Label" parent="CentreContainer/MarginContainer/MainLayout/LeftSide" unique_id=134823192]
+custom_minimum_size = Vector2(360, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 0.8)
+theme_override_font_sizes/font_size = 32
+text = "Even in the fog of war,
+a tank is still visible…"
+
+[node name="RightSide" type="VBoxContainer" parent="CentreContainer/MarginContainer/MainLayout" unique_id=1482201578]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="RingWidget" type="Control" parent="CentreContainer/MarginContainer/MainLayout/RightSide" unique_id=900939586]
+custom_minimum_size = Vector2(220, 220)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="SpinnerDecor" type="Control" parent="CentreContainer/MarginContainer/MainLayout/RightSide/RingWidget" unique_id=131708257]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_dhtv6")
+
+[node name="ProgressRing" type="Control" parent="CentreContainer/MarginContainer/MainLayout/RightSide/RingWidget" unique_id=483712619]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_hgo68")
+
+[node name="RingCentre" type="CenterContainer" parent="CentreContainer/MarginContainer/MainLayout/RightSide/RingWidget" unique_id=2062604124]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="countDown" type="Label" parent="CentreContainer/MarginContainer/MainLayout/RightSide/RingWidget/RingCentre" unique_id=900943297]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "0%"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LoadingHint" type="Label" parent="CentreContainer/MarginContainer/MainLayout/RightSide" unique_id=1398311716]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 0.33333334)
+theme_override_font_sizes/font_size = 14
+text = "Loading…"
+horizontal_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=390998854]

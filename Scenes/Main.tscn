@@ -1,0 +1,1088 @@
+[gd_scene format=3 uid="uid://c88accirkf4mj"]
+
+[ext_resource type="Texture2D" uid="uid://btevpk4dfrri5" path="res://Assets/Environment/Dirt_11-256x256.png" id="1_346fj"]
+[ext_resource type="Texture2D" uid="uid://hxvgi33ijlpj" path="res://Assets/Environment/Dirt_13-256x256.png" id="2_0sclb"]
+[ext_resource type="Texture2D" uid="uid://d1qewibct6vwg" path="res://Assets/Props/Trees/Tree - Pine Snow 00.png" id="3_0sclb"]
+[ext_resource type="PackedScene" uid="uid://cgwf6y4opli8q" path="res://Assets/Slope/slope_in_the_forest.glb" id="3_1p5hy"]
+[ext_resource type="PackedScene" uid="uid://vdlgnydd7ie8" path="res://Assets/Buildings/Church/old_wooden_church.glb" id="4_346fj"]
+[ext_resource type="Texture2D" uid="uid://gi8ebhhg2u0j" path="res://Assets/Props/Trees/Tree - Pine Snow 01.png" id="4_jyqft"]
+[ext_resource type="Texture2D" uid="uid://b2qbg8tyma68b" path="res://Assets/Props/Trees/Tree - Pine Snow 02.png" id="5_3tgeq"]
+[ext_resource type="Texture2D" uid="uid://dbn7yrvr0qma0" path="res://Assets/Props/Trees/Tree - Pine Snow 03.png" id="6_c4ay3"]
+[ext_resource type="PackedScene" uid="uid://db2utdrxa3oaj" path="res://Assets/Goal/Metal1/metal1.tscn" id="7_50glp"]
+[ext_resource type="Texture2D" uid="uid://cqqin03wko284" path="res://Assets/Props/Trees/Tree - Pine Snow 04.png" id="7_aht7i"]
+[ext_resource type="PackedScene" uid="uid://bptkicvrfgjyn" path="res://Assets/Buildings/Rocky/rocky_house_in_the_mountains_-_world_war_1.glb" id="7_fq0cl"]
+[ext_resource type="PackedScene" uid="uid://dl62le8bcuk37" path="res://Assets/Goal/Woodwall/woodwall.tscn" id="7_jw32o"]
+[ext_resource type="Shape3D" uid="uid://cyvoo23wq0bdk" path="res://Assets/Goal/Metal1/metal1_shape.tres" id="8_bmxlf"]
+[ext_resource type="PackedScene" uid="uid://c16us53tidu1d" path="res://Assets/Goal/Metal2/metal2.tscn" id="9_vy5pj"]
+[ext_resource type="Shape3D" uid="uid://dp0hq2i2t3ly6" path="res://Assets/Goal/Woodwall/woodwall_shape.tres" id="10_4kpch"]
+[ext_resource type="PackedScene" uid="uid://betob3bpyowks" path="res://Assets/Props/Snow/snowy_ground_vefkajufa_high.glb" id="11_3tgeq"]
+[ext_resource type="PackedScene" uid="uid://bgetu4fvf82jm" path="res://Assets/Pit/dirt_pit.tscn" id="11_frkhe"]
+[ext_resource type="PackedScene" uid="uid://d102b7npbhi6n" path="res://Assets/Props/SnowClump/snow_clump_xe0nfaoqx_high.glb" id="11_jyqft"]
+[ext_resource type="PackedScene" uid="uid://beirhv51yip1j" path="res://Assets/Buildings/Ruins/Ruin.FBX" id="11_vvnwx"]
+[ext_resource type="Shape3D" uid="uid://uw3bbu7twq1" path="res://Assets/Goal/Metal2/metal2_shape.tres" id="12_grg3l"]
+[ext_resource type="Script" uid="uid://pru77182vw8y" path="res://Script/camera_rig.gd" id="13_1p5hy"]
+[ext_resource type="PackedScene" uid="uid://bqj3legsrvdhw" path="res://Assets/Ball/ball.glb" id="13_frkhe"]
+[ext_resource type="PackedScene" uid="uid://3rfvh5wdk1p4" path="res://Assets/Props/BarbWire/BarbWire.scn" id="14_lac6x"]
+[ext_resource type="PackedScene" uid="uid://h1baescvluam" path="res://Assets/Props/Tombstones/Cross/cross.glb" id="17_sxkr1"]
+[ext_resource type="PackedScene" uid="uid://cxx2h2bydm8gr" path="res://Assets/Props/Tombstones/Slab/slab.glb" id="18_fq0cl"]
+[ext_resource type="PackedScene" uid="uid://dhsjhf2b0cvh6" path="res://Assets/Props/SandbagBarrier/sandbag_barrier.scn" id="20_aht7i"]
+[ext_resource type="PackedScene" uid="uid://cjeg4ktveoota" path="res://Assets/Corners/Corner1/Corner1.scn" id="21_aht7i"]
+[ext_resource type="PackedScene" uid="uid://bbo2gch0f141w" path="res://Assets/Corners/Corner2/Corner2.scn" id="22_5jffn"]
+[ext_resource type="PackedScene" uid="uid://vovi82v3i76g" path="res://Assets/Limits/SanbagLine/sandbag_line.scn" id="23_4n42c"]
+[ext_resource type="PackedScene" uid="uid://chbqb6p0lvkwi" path="res://Assets/Limits/FourSandbags/FourSandbags.scn" id="23_4yxf6"]
+[ext_resource type="PackedScene" uid="uid://bynd8cjhdopv7" path="res://Assets/Limits/WallDirtEnd/WallDirtEnd.scn" id="23_5jffn"]
+[ext_resource type="PackedScene" uid="uid://b786bvbkt8hmy" path="res://Assets/Limits/MetalWithSandbags/metal_with_sandbags.scn" id="23_c5snn"]
+[ext_resource type="PackedScene" uid="uid://1ua1vo4eekls" path="res://Assets/Limits/SandbagStack/sandbag_stack.scn" id="23_kpo4j"]
+[ext_resource type="PackedScene" uid="uid://b4mpkmuxwfk8d" path="res://Assets/Limits/DirtAndMetal/DirtAndMetal.scn" id="23_qta6b"]
+[ext_resource type="PackedScene" uid="uid://pk43cgyyujmp" path="res://Assets/Limits/Logs/logs.scn" id="23_xvtyr"]
+[ext_resource type="PackedScene" uid="uid://clph6qd6l4y4j" path="res://Assets/Limits/LowMetal/LowMetal.scn" id="24_u7mjy"]
+[ext_resource type="PackedScene" uid="uid://c4wxv22346rf" path="res://Assets/Limits/SanbagPile/SandbagPile.scn" id="29_x3rx7"]
+[ext_resource type="PackedScene" uid="uid://dhxhu8op2mo5y" path="res://Assets/Props/Flags/HangingFlag/HangingFlag.scn" id="34_6heos"]
+[ext_resource type="PackedScene" uid="uid://bfsr0i3q46co1" path="res://Assets/Props/MedKit/MedKit.glb" id="37_clvyn"]
+[ext_resource type="PackedScene" uid="uid://eafo7px6lgs3" path="res://Assets/Props/Cross/IronCross.glb" id="38_5psol"]
+[ext_resource type="PackedScene" uid="uid://bio25e5071rt1" path="res://Assets/Props/KingAlbert/KingAlbertI.glb" id="39_m4llh"]
+[ext_resource type="PackedScene" uid="uid://b3kf5x8m2q7t" path="res://Scenes/CentralPlayer.tscn" id="40_cplyr"]
+[ext_resource type="PackedScene" uid="uid://b8p06k5xtjs4e" path="res://Assets/Props/AmmoBox/AmmoBox.scn" id="40_m4llh"]
+[ext_resource type="PackedScene" uid="uid://b3e40yu3t2h0" path="res://Scenes/CentralGoalkeeper.tscn" id="41_cgk"]
+[ext_resource type="Script" uid="uid://dig63ns6c6jk1" path="res://Script/Main.gd" id="42_maingd"]
+[ext_resource type="PackedScene" uid="uid://c7m3qax5n2k8f" path="res://Scenes/EntentePlayer.tscn" id="43_eplyr"]
+[ext_resource type="PackedScene" uid="uid://82554yy7voe5" path="res://Scenes/EntenteGoalkeeper.tscn" id="44_egk"]
+
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_frkhe"]
+rayleigh_color = Color(0.5468543, 0.67263305, 0.785777, 1)
+mie_color = Color(0.9452769, 0.9309246, 0.8808251, 1)
+turbidity = 12.0
+ground_color = Color(0.48452926, 0.5271128, 0.46135613, 1)
+
+[sub_resource type="Sky" id="Sky_r150o"]
+sky_material = SubResource("PhysicalSkyMaterial_frkhe")
+
+[sub_resource type="Environment" id="Environment_idj7w"]
+background_mode = 2
+sky = SubResource("Sky_r150o")
+sky_rotation = Vector3(0, 0.7853982, 0)
+ambient_light_source = 3
+tonemap_mode = 2
+ssao_enabled = true
+ssao_radius = 2.0
+ssil_enabled = true
+sdfgi_enabled = true
+glow_enabled = true
+glow_bloom = 0.05
+glow_blend_mode = 2
+fog_enabled = true
+fog_light_color = Color(0.91627353, 0.9260749, 0.9452769, 1)
+fog_density = 0.0006
+fog_aerial_perspective = 0.15
+fog_height_density = 2.0
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.006
+volumetric_fog_sky_affect = 0.0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_c1w88"]
+size = Vector2(50, 30)
+subdivide_width = 50
+subdivide_depth = 30
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c1w88"]
+albedo_texture = ExtResource("1_346fj")
+roughness = 0.9
+ao_enabled = true
+ao_light_affect = 0.3
+ao_texture = ExtResource("1_346fj")
+uv1_scale = Vector3(3, 3, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c1w88"]
+size = Vector3(50, 0.1, 30)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_r150o"]
+size = Vector2(1000, 1000)
+subdivide_width = 100
+subdivide_depth = 100
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kln2b"]
+albedo_texture = ExtResource("2_0sclb")
+ao_enabled = true
+ao_light_affect = 0.4
+ao_texture = ExtResource("2_0sclb")
+uv1_scale = Vector3(30, 30, 1)
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_grg3l"]
+
+[sub_resource type="Curve3D" id="Curve3D_m4llh"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -17.430054, -0.05000305, -4.7612457, 0, 0, 0, 0, 0, 0, 74.70834, -0.05000305, 38.578445, 0, 0, 0, 0, 0, 0, 114.57961, -0.05000305, 28.32515, 0, 0, 0, 0, 0, 0, 152.07999, -0.05000305, 0.4390564, 0, 0, 0, 0, 0, 0, 201.85242, -0.05001831, -18.537292, 0, 0, 0, 0, 0, 0, 260.58923, -0.05001831, -4.204376, 0, 0, 0, 0, 0, 0, 315.5582, -0.05000305, -6.637085, 0, 0, 0, 0, 0, 0, 357.69626, -0.05000305, -63.627686, 0, 0, 0, 0, 0, 0, 424.6304, -0.05000305, -94.879364, 0, 0, 0, 0, 0, 0, 476.7802, -0.05000305, -78.40662, 0, 0, 0, 0, 0, 0, 520.2402, -0.05000305, -30.68512, 0, 0, 0, 0, 0, 0, 573.4982, -0.05000305, 7.505768, 0, 0, 0, 0, 0, 0, 620.8457, -0.05000305, -7.492462, 0, 0, 0, 0, 0, 0, 711.62366, -0.05000305, -48.36557),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 14
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lac6x"]
+albedo_texture = ExtResource("1_346fj")
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_frkhe"]
+friction = 0.8
+bounce = 0.1
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_frkhe"]
+radius = 0.07981672
+
+[node name="Main" type="Node3D" unique_id=1663838063]
+script = ExtResource("42_maingd")
+
+[node name="Environment" type="Node3D" parent="." unique_id=1984414003]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Environment" unique_id=109161908]
+environment = SubResource("Environment_idj7w")
+
+[node name="Sun" type="DirectionalLight3D" parent="Environment" unique_id=43603442]
+transform = Transform3D(0.70710677, -0.1830127, 0.68301266, 0, 0.9659258, 0.25881904, -0.70710677, -0.1830127, 0.68301266, 0, 50, 0)
+light_color = Color(0.95468724, 0.9309246, 0.8808251, 1)
+light_energy = 1.2
+light_angular_distance = 0.5
+light_specular = 0.5
+shadow_enabled = true
+shadow_normal_bias = 0.5
+shadow_blur = 1.5
+directional_shadow_max_distance = 200.0
+
+[node name="Terrain" type="Node3D" parent="." unique_id=1825992950]
+
+[node name="Ground" type="StaticBody3D" parent="Terrain" unique_id=1079997357]
+
+[node name="GroundMesh" type="MeshInstance3D" parent="Terrain/Ground" unique_id=976888921]
+mesh = SubResource("PlaneMesh_c1w88")
+surface_material_override/0 = SubResource("StandardMaterial3D_c1w88")
+
+[node name="GroundCollision" type="CollisionShape3D" parent="Terrain/Ground" unique_id=680546184]
+shape = SubResource("BoxShape3D_c1w88")
+
+[node name="Landscape" type="StaticBody3D" parent="Terrain" unique_id=1468917635]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+
+[node name="LandscapeMesh" type="MeshInstance3D" parent="Terrain/Landscape" unique_id=737145212]
+mesh = SubResource("PlaneMesh_r150o")
+surface_material_override/0 = SubResource("StandardMaterial3D_kln2b")
+
+[node name="LandscapeCollision" type="CollisionShape3D" parent="Terrain/Landscape" unique_id=1526030814]
+shape = SubResource("WorldBoundaryShape3D_grg3l")
+
+[node name="Surroundings" type="Node3D" parent="Terrain" unique_id=843332755]
+
+[node name="Treeline" type="Node3D" parent="Terrain/Surroundings" unique_id=1572722082]
+
+[node name="Front" type="Node3D" parent="Terrain/Surroundings/Treeline" unique_id=616665613]
+
+[node name="Tree1" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Front" unique_id=1591072817]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.625633, -400)
+pixel_size = 0.15
+billboard = 2
+shaded = true
+alpha_cut = 2
+texture = ExtResource("5_3tgeq")
+
+[node name="Tree2" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Front" unique_id=85796213]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -275, 12.764, -400)
+pixel_size = 0.1
+billboard = 2
+shaded = true
+alpha_cut = 2
+texture = ExtResource("3_0sclb")
+
+[node name="Tree3" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Front" unique_id=592537403]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -250, 9.563396, -400)
+pixel_size = 0.15
+billboard = 2
+shaded = true
+alpha_cut = 2
+texture = ExtResource("4_jyqft")
+
+[node name="Tree4" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Front" unique_id=1569776843]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -225, 9.659567, -400)
+pixel_size = 0.15
+billboard = 2
+shaded = true
+alpha_cut = 2
+texture = ExtResource("5_3tgeq")
+
+[node name="Tree5" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Front" unique_id=785325168]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -200, 7.938861, -400)
+pixel_size = 0.25
+billboard = 2
+shaded = true
+alpha_cut = 2
+texture = ExtResource("6_c4ay3")
+
+[node name="Tree6" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Front" unique_id=1632889510]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -175, 12.764, -400)
+pixel_size = 0.1
+billboard = 2
+shaded = true
+alpha_cut = 2
+texture = ExtResource("7_aht7i")
+
+[node name="Tree7" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Front" unique_id=445742412]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 12.764, -400)
+pixel_size = 0.1
+billboard = 2
+shaded = true
+alpha_cut = 2
+texture = ExtResource("3_0sclb")
+
+[node name="Tree8" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Front" unique_id=192140633]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -125, 9.576193, -400)
+pixel_size = 0.15
+billboard = 2
+shaded = true
+alpha_cut = 2
+texture = ExtResource("4_jyqft")
+
+[node name="Tree9" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Front" unique_id=1224448523]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -100, 9.586973, -400)
+pixel_size = 0.15
+billboard = 2
+shaded = true
+alpha_cut = 2
+texture = ExtResource("5_3tgeq")
+
+[node name="Tree10" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Front" unique_id=1526290815]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75, 12.764, -400)
+pixel_size = 0.1
+billboard = 2
+shaded = true
+alpha_cut = 2
+texture = ExtResource("7_aht7i")
+
+[node name="Tree11" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Front" unique_id=262580030]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 12.764, -400)
+pixel_size = 0.1
+billboard = 2
+shaded = true
+alpha_cut = 2
+texture = ExtResource("3_0sclb")
+
+[node name="Tree12" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Front" unique_id=613337346]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 9.636581, -400)
+pixel_size = 0.15
+billboard = 2
+shaded = true
+alpha_cut = 2
+texture = ExtResource("4_jyqft")
+
+[node name="Tree13" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Front" unique_id=639030352]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 8.066647, -400)
+pixel_size = 0.25
+billboard = 2
+shaded = true
+alpha_cut = 2
+texture = ExtResource("6_c4ay3")
+
+[node name="Tree14" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Front" unique_id=331448788]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 12.764, -400)
+pixel_size = 0.1
+billboard = 2
+shaded = true
+alpha_cut = 2
+texture = ExtResource("7_aht7i")
+
+[node name="Tree15" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Front" unique_id=974637000]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75, 12.764, -400)
+pixel_size = 0.1
+billboard = 2
+shaded = true
+alpha_cut = 2
+texture = ExtResource("3_0sclb")
+
+[node name="Tree16" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Front" unique_id=1136375642]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 7.973035, -400)
+pixel_size = 0.25
+billboard = 2
+shaded = true
+alpha_cut = 2
+texture = ExtResource("6_c4ay3")
+
+[node name="Tree17" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Front" unique_id=43681920]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 125, 12.764, -400)
+pixel_size = 0.1
+billboard = 2
+shaded = true
+alpha_cut = 2
+texture = ExtResource("3_0sclb")
+
+[node name="Tree18" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Front" unique_id=1555772808]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 9.646587, -400)
+pixel_size = 0.15
+billboard = 2
+shaded = true
+alpha_cut = 2
+texture = ExtResource("5_3tgeq")
+
+[node name="Tree19" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Front" unique_id=422668817]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 175, 9.555761, -400)
+pixel_size = 0.15
+billboard = 2
+shaded = true
+alpha_cut = 2
+texture = ExtResource("4_jyqft")
+
+[node name="Tree20" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Front" unique_id=470726798]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 200, 12.764, -400)
+pixel_size = 0.1
+billboard = 2
+shaded = true
+alpha_cut = 2
+texture = ExtResource("3_0sclb")
+
+[node name="Back" type="Node3D" parent="Terrain/Surroundings/Treeline" unique_id=1821279000]
+
+[node name="Tree1" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Back" unique_id=133760647]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 14.8, -450)
+pixel_size = 0.12
+shaded = true
+alpha_cut = 2
+texture = ExtResource("3_0sclb")
+
+[node name="Tree2" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Back" unique_id=1146867689]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -289.35114, 14.8, -450)
+pixel_size = 0.12
+shaded = true
+alpha_cut = 2
+texture = ExtResource("3_0sclb")
+
+[node name="Tree3" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Back" unique_id=1623770560]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -264.35114, 14.8, -450)
+pixel_size = 0.12
+shaded = true
+alpha_cut = 2
+texture = ExtResource("7_aht7i")
+
+[node name="Tree4" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Back" unique_id=428462494]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -239.35114, 7.9239397, -450)
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource("6_c4ay3")
+
+[node name="Tree5" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Back" unique_id=495492785]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -207.36426, 9.6077795, -450)
+pixel_size = 0.15
+shaded = true
+alpha_cut = 2
+texture = ExtResource("5_3tgeq")
+
+[node name="Tree6" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Back" unique_id=1203190591]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -182.36426, 9.567138, -450)
+pixel_size = 0.15
+shaded = true
+alpha_cut = 2
+texture = ExtResource("4_jyqft")
+
+[node name="Tree7" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Back" unique_id=1965099069]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -157.36426, 14.8, -450)
+pixel_size = 0.12
+shaded = true
+alpha_cut = 2
+texture = ExtResource("3_0sclb")
+
+[node name="Tree8" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Back" unique_id=1196255630]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -122.88404, 14.8, -450)
+pixel_size = 0.12
+shaded = true
+alpha_cut = 2
+texture = ExtResource("7_aht7i")
+
+[node name="Tree9" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Back" unique_id=915827076]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94.880844, 7.947585, -450)
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource("6_c4ay3")
+
+[node name="Tree10" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Back" unique_id=347942718]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.77515, 7.7245235, -450)
+pixel_size = 0.12
+shaded = true
+alpha_cut = 2
+texture = ExtResource("5_3tgeq")
+
+[node name="Tree11" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Back" unique_id=27541839]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 7.6137934, -450)
+pixel_size = 0.12
+shaded = true
+alpha_cut = 2
+texture = ExtResource("4_jyqft")
+
+[node name="Tree12" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Back" unique_id=1658924960]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 14.8, -450)
+pixel_size = 0.12
+shaded = true
+alpha_cut = 2
+texture = ExtResource("3_0sclb")
+
+[node name="Tree13" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Back" unique_id=1279930553]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.505127, 20.469547, -450)
+pixel_size = 0.16
+shaded = true
+alpha_cut = 2
+texture = ExtResource("7_aht7i")
+
+[node name="Tree14" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Back" unique_id=1437988082]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.50513, 8.004941, -450)
+pixel_size = 0.25
+shaded = true
+alpha_cut = 2
+texture = ExtResource("6_c4ay3")
+
+[node name="Tree15" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Back" unique_id=882529717]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100.671875, 12.731576, -450)
+pixel_size = 0.2
+shaded = true
+alpha_cut = 2
+texture = ExtResource("5_3tgeq")
+
+[node name="Tree16" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Back" unique_id=861303708]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 125.671875, 7.6079597, -450)
+pixel_size = 0.12
+shaded = true
+alpha_cut = 2
+texture = ExtResource("4_jyqft")
+
+[node name="Tree17" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Back" unique_id=714041120]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150.67188, 14.8, -450)
+pixel_size = 0.12
+shaded = true
+alpha_cut = 2
+texture = ExtResource("3_0sclb")
+
+[node name="Tree18" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Back" unique_id=1087025637]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 182.37195, 10.100582, -450)
+pixel_size = 0.08
+shaded = true
+alpha_cut = 2
+texture = ExtResource("7_aht7i")
+
+[node name="Tree19" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Back" unique_id=1304695207]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 207.37195, 14.8, -450)
+pixel_size = 0.12
+shaded = true
+alpha_cut = 2
+texture = ExtResource("3_0sclb")
+
+[node name="Tree20" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Back" unique_id=779136135]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 232.37195, 14.8, -450)
+pixel_size = 0.12
+shaded = true
+alpha_cut = 2
+texture = ExtResource("7_aht7i")
+
+[node name="Tree21" type="Sprite3D" parent="Terrain/Surroundings/Treeline/Back" unique_id=1512394133]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 251.73227, 14.8, -450)
+pixel_size = 0.12
+shaded = true
+alpha_cut = 2
+texture = ExtResource("3_0sclb")
+
+[node name="Slopes" type="Node3D" parent="Terrain/Surroundings" unique_id=661629711]
+
+[node name="Slope_Right" parent="Terrain/Surroundings/Slopes" unique_id=1816309961 instance=ExtResource("3_1p5hy")]
+transform = Transform3D(0.017668419, 0, -0.02424514, 0, 0.029999997, 0, 0.02424514, 0, 0.017668419, 271.8923, 0, -300)
+
+[node name="Slope_Left" parent="Terrain/Surroundings/Slopes" unique_id=787948390 instance=ExtResource("3_1p5hy")]
+transform = Transform3D(0.022230057, 0, 0.02014509, 0, 0.029999997, 0, -0.02014509, 0, 0.022230057, -295.12732, 0, -300)
+
+[node name="Buildings" type="Node3D" parent="Terrain/Surroundings" unique_id=473874858]
+
+[node name="Church" parent="Terrain/Surroundings/Buildings" unique_id=506760403 instance=ExtResource("4_346fj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 0, -50)
+
+[node name="Rocky" parent="Terrain/Surroundings/Buildings" unique_id=263215093 instance=ExtResource("7_fq0cl")]
+transform = Transform3D(4.330127, 0, 2.5, 0, 5, 0, -2.5, 0, 4.330127, -150, 0, -200)
+
+[node name="Ruin" parent="Terrain/Surroundings/Buildings" unique_id=1048459438 instance=ExtResource("11_vvnwx")]
+transform = Transform3D(0.2819078, 0, -0.10260604, 0, 0.3, 0, 0.10260604, 0, 0.2819078, 78.30542, 0, -155.66412)
+
+[node name="Snow" type="Node3D" parent="Terrain/Surroundings" unique_id=402859233]
+
+[node name="SnowyGround" parent="Terrain/Surroundings/Snow" unique_id=343925000 instance=ExtResource("11_3tgeq")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 75, 0, -300)
+
+[node name="SnowyGround2" parent="Terrain/Surroundings/Snow" unique_id=316302519 instance=ExtResource("11_3tgeq")]
+transform = Transform3D(8, 0, 0, 0, 6, 0, 0, 0, 8, -120, 0, -324)
+
+[node name="Trench" type="Node3D" parent="Terrain/Surroundings" unique_id=135506125]
+
+[node name="TrenchPath" type="Path3D" parent="Terrain/Surroundings/Trench" unique_id=1892999468]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -338.9301, 0.19667816, -114.89783)
+curve = SubResource("Curve3D_m4llh")
+
+[node name="TrenchPolygon" type="CSGPolygon3D" parent="Terrain/Surroundings/Trench/TrenchPath" unique_id=1404046691]
+transform = Transform3D(1, 0, 0, 0, 0.3, 0, 0, 0, 1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_lac6x")
+polygon = PackedVector2Array(-14, 0, 1, 1, 4, 1, 1, 0)
+mode = 2
+path_node = NodePath("..")
+path_interval_type = 0
+path_interval = 0.5
+path_simplify_angle = 0.0
+path_rotation = 2
+path_rotation_accurate = false
+path_local = true
+path_continuous_u = true
+path_u_distance = 1.0
+path_joined = false
+smooth_faces = true
+
+[node name="TrenchBarrier" type="Node3D" parent="Terrain/Surroundings/Trench" unique_id=135245440]
+
+[node name="BarbWire13" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=534403033 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.9384948, 0, 0.34529313, 0, 1, 0, -0.34529313, 0, 0.9384948, -154.13475, 0, -122.40627)
+
+[node name="BarbWire14" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=40270242 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.9384948, 0, 0.34529313, 0, 1, 0, -0.34529313, 0, 0.9384948, -168.37572, 0, -117.23087)
+
+[node name="BarbWire15" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=633243326 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.80777955, 0, 0.58948475, 0, 1, 0, -0.58948475, 0, 0.80777955, -187.21179, 0, -109.121376)
+
+[node name="SandbagLine5" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=1708758232 instance=ExtResource("23_4n42c")]
+transform = Transform3D(-2.7030346, 0, -1.3013841, 0, 2.9999995, 0, 1.3013841, 0, -2.7030346, -142.69208, 0, -125.2266)
+
+[node name="BarbWire10" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=95671767 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.9706757, 0, -0.2403929, 0, 1, 0, 0.2403929, 0, 0.9706757, -89.96194, 0, -117.199936)
+
+[node name="BarbWire11" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=1516018239 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.9706757, 0, -0.2403929, 0, 1, 0, 0.2403929, 0, 0.9706757, -104.655235, 0, -120.90085)
+
+[node name="BarbWire12" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=2039557825 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.9706757, 0, -0.2403929, 0, 1, 0, 0.2403929, 0, 0.9706757, -119.35483, 0, -124.68313)
+
+[node name="SandbagLine2" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=270844470 instance=ExtResource("23_4n42c")]
+transform = Transform3D(-2.998975, 0, 0.07838869, 0, 2.9999995, 0, -0.07838869, 0, -2.998975, -76.31266, 0, -115.058945)
+
+[node name="BarbWire" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=1629928976 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.99841684, 0, 0.056247618, 0, 1, 0, -0.056247618, 0, 0.99841684, -26.708385, 0, -118.65355)
+
+[node name="BarbWire2" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=420328382 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.99841684, 0, 0.056247618, 0, 1, 0, -0.056247618, 0, 0.99841684, -41.83988, 0, -117.861404)
+
+[node name="BarbWire3" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=1116543420 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.99841684, 0, 0.056247618, 0, 1, 0, -0.056247618, 0, 0.99841684, -57.001366, 0, -117.145164)
+
+[node name="SandbagLine" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=1037791507 instance=ExtResource("23_4n42c")]
+transform = Transform3D(-2.1616256, 0, -2.0802343, 0, 3, 0, 2.0802343, 0, -2.1616256, -18.914558, 0, -121.21644)
+
+[node name="BarbWire4" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=1064904304 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.60470057, 0, 0.7964529, 0, 1, 0, -0.7964529, 0, 0.60470057, 9.823848, 0, -160.2714)
+
+[node name="BarbWire5" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=1675757837 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.591082, 0, 0.8066115, 0, 1, 0, -0.8066115, 0, 0.591082, 0.8814497, 0, -148.50537)
+
+[node name="BarbWire6" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=1968677257 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.5976414, 0, 0.80176353, 0, 1, 0, -0.80176353, 0, 0.5976414, -7.7849026, 0, -136.76788)
+
+[node name="SandbagLine3" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=396982173 instance=ExtResource("23_4n42c")]
+transform = Transform3D(-1.7532322, 0, -2.4343731, 0, 2.9999993, 0, 2.4343731, 0, -1.7532322, 17.050432, 0, -167.39824)
+
+[node name="BarbWire7" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=1948031816 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.9048397, 0, 0.42575234, 0, 1, 0, -0.42575234, 0, 0.9048397, 57.772587, 0, -193.35909)
+
+[node name="BarbWire8" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=457584509 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.8999232, 0, 0.43604833, 0, 1, 0, -0.43604833, 0, 0.8999232, 45.18785, 0, -187.24792)
+
+[node name="BarbWire9" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=2134183383 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.8970162, 0, 0.4419977, 0, 1, 0, -0.4419977, 0, 0.8970162, 31.855728, 0, -181.05731)
+
+[node name="SandbagLine4" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=1272954229 instance=ExtResource("23_4n42c")]
+transform = Transform3D(-2.7110467, 0, -1.2846105, 0, 2.999999, 0, 1.2846105, 0, -2.7110467, 68.088104, 0, -196.48793)
+
+[node name="BarbWire16" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=1505861726 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.95597804, 0, -0.29343808, 0, 1, 0, 0.29343808, 0, 0.95597804, 128.3388, 0, -192.31082)
+
+[node name="BarbWire17" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=1460639722 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.9592638, 0, -0.2825119, 0, 1, 0, 0.2825119, 0, 0.9592638, 114.91524, 0, -196.25165)
+
+[node name="BarbWire18" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=1719820118 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.9611135, 0, -0.2761538, 0, 1, 0, 0.2761538, 0, 0.9611135, 100.88513, 0, -200.6363)
+
+[node name="BarbWire19" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=2130492745 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.6785616, 0, -0.73454344, 0, 1, 0, 0.73454344, 0, 0.6785616, 163.24815, 0, -158.91898)
+
+[node name="BarbWire20" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=484813589 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.6868982, 0, -0.7267537, 0, 1, 0, 0.7267537, 0, 0.6868982, 153.62965, 0, -169.07805)
+
+[node name="BarbWire21" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=683972786 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.6916954, 0, -0.72218937, 0, 1, 0, 0.72218937, 0, 0.6916954, 143.71028, 0, -179.92584)
+
+[node name="SandbagLine6" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=698483732 instance=ExtResource("23_4n42c")]
+transform = Transform3D(-2.0084617, 0, 2.2284703, 0, 2.999999, 0, -2.2284703, 0, -2.0084617, 171.09312, 0, -147.88333)
+
+[node name="BarbWire22" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=1682270073 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.7916937, 0, -0.6109183, 0, 1, 0, 0.6109183, 0, 0.7916937, 214.76286, 0, -116.30137)
+
+[node name="BarbWire23" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=1823636393 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.79861236, 0, -0.6018458, 0, 1, 0, 0.6018458, 0, 0.79861236, 203.58296, 0, -124.71164)
+
+[node name="BarbWire24" parent="Terrain/Surroundings/Trench/TrenchBarrier" unique_id=1119675011 instance=ExtResource("14_lac6x")]
+transform = Transform3D(0.80258, 0, -0.5965445, 0, 1, 0, 0.5965445, 0, 0.80258, 191.99142, 0, -133.75069)
+
+[node name="Pitch" type="Node3D" parent="." unique_id=638367913]
+
+[node name="SnowClumps" type="Node3D" parent="Pitch" unique_id=182993161]
+
+[node name="SnowClump" parent="Pitch/SnowClumps" unique_id=1299478351 instance=ExtResource("11_jyqft")]
+transform = Transform3D(2.457456, 0, 1.7207294, 0, 0.2, 0, -1.7207294, 0, 2.457456, -3, 0, -12)
+
+[node name="SnowClump2" parent="Pitch/SnowClumps" unique_id=479953236 instance=ExtResource("11_jyqft")]
+transform = Transform3D(2.2294345, 0, 2.007392, 0, 0.2, 0, -2.007392, 0, 2.2294345, 10, 0, -5)
+
+[node name="SnowClump3" parent="Pitch/SnowClumps" unique_id=683847036 instance=ExtResource("11_jyqft")]
+transform = Transform3D(0.7257657, 0, 2.9108872, 0, 0.2, 0, -2.9108872, 0, 0.7257657, 22, 0, 11)
+
+[node name="SnowClump4" parent="Pitch/SnowClumps" unique_id=516137333 instance=ExtResource("11_jyqft")]
+transform = Transform3D(2.6730196, 0, 1.3619716, 0, 0.2, 0, -1.3619716, 0, 2.6730196, -6, 0, 12)
+
+[node name="SnowClump5" parent="Pitch/SnowClumps" unique_id=248485437 instance=ExtResource("11_jyqft")]
+transform = Transform3D(-2.7615147, 0, 1.1721935, 0, 0.2, 0, -1.1721935, 0, -2.7615147, 12, 0, 5)
+
+[node name="SnowClump6" parent="Pitch/SnowClumps" unique_id=706127479 instance=ExtResource("11_jyqft")]
+transform = Transform3D(2.9231102, 0, 0.67485315, 0, 0.2, 0, -0.67485315, 0, 2.9231102, 18, 0, -11)
+
+[node name="SnowClump7" parent="Pitch/SnowClumps" unique_id=189957711 instance=ExtResource("11_jyqft")]
+transform = Transform3D(3, 0, 0, 0, 0.2, 0, 0, 0, 3, 22, 0, 0)
+
+[node name="SnowClump8" parent="Pitch/SnowClumps" unique_id=1432084181 instance=ExtResource("11_jyqft")]
+transform = Transform3D(-0.46930334, 0, 2.9630651, 0, 0.2, 0, -2.9630651, 0, -0.46930334, 20, 0, -7)
+
+[node name="SnowClump9" parent="Pitch/SnowClumps" unique_id=1027243731 instance=ExtResource("11_jyqft")]
+transform = Transform3D(0.877115, 0, 2.8689144, 0, 0.2, 0, -2.8689144, 0, 0.877115, 24, 0, 6)
+
+[node name="SnowClump10" parent="Pitch/SnowClumps" unique_id=1888691958 instance=ExtResource("11_jyqft")]
+transform = Transform3D(2.3314378, 0, 1.8879611, 0, 0.2, 0, -1.8879611, 0, 2.3314378, -23, 0, 12)
+
+[node name="SnowClump11" parent="Pitch/SnowClumps" unique_id=489998780 instance=ExtResource("11_jyqft")]
+transform = Transform3D(2.9835658, 0, 0.3135854, 0, 0.2, 0, -0.3135854, 0, 2.9835658, -19, 0, -9)
+
+[node name="SnowClump12" parent="Pitch/SnowClumps" unique_id=2778870 instance=ExtResource("11_jyqft")]
+transform = Transform3D(3, 0, 0, 0, 0.2, 0, 0, 0, 3, -22.3, 0, 0)
+
+[node name="GoalA" type="Node3D" parent="Pitch" unique_id=477620379]
+
+[node name="BackdropLeft" type="StaticBody3D" parent="Pitch/GoalA" unique_id=424117617]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25, 0, -1)
+
+[node name="BackdropLeftMesh" parent="Pitch/GoalA/BackdropLeft" unique_id=1230886800 instance=ExtResource("7_50glp")]
+
+[node name="BackdropLeftCollision" type="CollisionShape3D" parent="Pitch/GoalA/BackdropLeft" unique_id=1046499323]
+shape = ExtResource("8_bmxlf")
+
+[node name="WoodWall" type="StaticBody3D" parent="Pitch/GoalA" unique_id=937983096]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 25, 0, -1)
+
+[node name="WoodWallMesh" parent="Pitch/GoalA/WoodWall" unique_id=291923646 instance=ExtResource("7_jw32o")]
+
+[node name="WoodWallCollision" type="CollisionShape3D" parent="Pitch/GoalA/WoodWall" unique_id=345823878]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0007071495, 0, 0)
+shape = ExtResource("10_4kpch")
+
+[node name="BackdropRight" type="StaticBody3D" parent="Pitch/GoalA" unique_id=1833770416]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25, 0, 2.7)
+
+[node name="BackdropRightMesh" parent="Pitch/GoalA/BackdropRight" unique_id=356714691 instance=ExtResource("9_vy5pj")]
+
+[node name="BackdropRightCollision" type="CollisionShape3D" parent="Pitch/GoalA/BackdropRight" unique_id=1701455965]
+shape = ExtResource("12_grg3l")
+
+[node name="GoalB" type="Node3D" parent="Pitch" unique_id=249889885]
+
+[node name="BackdropLeft" type="StaticBody3D" parent="Pitch/GoalB" unique_id=1718441093]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -25, 0, 1)
+
+[node name="BackdropLeftMesh" parent="Pitch/GoalB/BackdropLeft" unique_id=620356431 instance=ExtResource("7_50glp")]
+
+[node name="BackdropLeftCollision" type="CollisionShape3D" parent="Pitch/GoalB/BackdropLeft" unique_id=264922493]
+shape = ExtResource("8_bmxlf")
+
+[node name="WoodWall" type="StaticBody3D" parent="Pitch/GoalB" unique_id=199401292]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -25, 0, 1)
+
+[node name="WoodWallMesh" parent="Pitch/GoalB/WoodWall" unique_id=865672825 instance=ExtResource("7_jw32o")]
+
+[node name="WoodWallCollision" type="CollisionShape3D" parent="Pitch/GoalB/WoodWall" unique_id=451692954]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0007071495, 0, 0)
+shape = ExtResource("10_4kpch")
+
+[node name="BackdropRight" type="StaticBody3D" parent="Pitch/GoalB" unique_id=1580673701]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -25, 0, -2.7)
+
+[node name="BackdropRightMesh" parent="Pitch/GoalB/BackdropRight" unique_id=676058484 instance=ExtResource("9_vy5pj")]
+
+[node name="BackdropRightCollision" type="CollisionShape3D" parent="Pitch/GoalB/BackdropRight" unique_id=438175288]
+shape = ExtResource("12_grg3l")
+
+[node name="DirtPit" parent="Pitch" unique_id=1143514447 instance=ExtResource("11_frkhe")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+
+[node name="Benches" type="Node3D" parent="Pitch" unique_id=1838649429]
+
+[node name="Bench_TeamEntente" parent="Pitch/Benches" unique_id=1285418390 instance=ExtResource("20_aht7i")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 18)
+
+[node name="Bench_TeamCentral" parent="Pitch/Benches" unique_id=1517648932 instance=ExtResource("20_aht7i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -18)
+
+[node name="Corners" type="Node3D" parent="Pitch" unique_id=2040718776]
+
+[node name="Corner1_R" parent="Pitch/Corners" unique_id=1981450526 instance=ExtResource("21_aht7i")]
+transform = Transform3D(0.70710677, 0, -0.70710677, 0, 0.3, 0, 0.70710677, 0, 0.70710677, 25.95, 0, -15.95)
+
+[node name="Corner1_L" parent="Pitch/Corners" unique_id=1640155890 instance=ExtResource("21_aht7i")]
+transform = Transform3D(0.7071067, 0, 0.7071067, 0, 0.3, 0, -0.7071067, 0, 0.7071067, -25.95, 0, -15.95)
+
+[node name="Corner2_R" parent="Pitch/Corners" unique_id=613043059 instance=ExtResource("22_5jffn")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 0.1, 0, 8.742278e-08, 0, -1, 26.212149, 0.025702834, 16.448734)
+
+[node name="Corner2_L" parent="Pitch/Corners" unique_id=1752296100 instance=ExtResource("22_5jffn")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 0.1, 0, -1, 0, -4.371139e-08, -26.212, 0.026, 16.449)
+
+[node name="Limits" type="Node3D" parent="Pitch" unique_id=1968796449]
+
+[node name="DirtAndMetal" type="Node3D" parent="Pitch/Limits" unique_id=513303878]
+
+[node name="DirtAndMetal_R" parent="Pitch/Limits/DirtAndMetal" unique_id=760935509 instance=ExtResource("23_qta6b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.976358, 0, -16.776962)
+
+[node name="DirtAndMetal_L" parent="Pitch/Limits/DirtAndMetal" unique_id=610755965 instance=ExtResource("23_qta6b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.884415, 0, -16.776962)
+
+[node name="FourSandbags" type="Node3D" parent="Pitch/Limits" unique_id=838018622]
+
+[node name="FourSandbags_Central_R" parent="Pitch/Limits/FourSandbags" unique_id=265188772 instance=ExtResource("23_4yxf6")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 10.708896, 0, -16.274)
+
+[node name="FourSandbags_Central_R2" parent="Pitch/Limits/FourSandbags" unique_id=480727878 instance=ExtResource("23_4yxf6")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 21.257992, 0, -16.274)
+
+[node name="FourSandbags_Central_L" parent="Pitch/Limits/FourSandbags" unique_id=636558742 instance=ExtResource("23_4yxf6")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.624881, 0, -16.274)
+
+[node name="FourSandbags_Central_L2" parent="Pitch/Limits/FourSandbags" unique_id=831074825 instance=ExtResource("23_4yxf6")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -21.082731, 0, -16.274)
+
+[node name="FourSandbags_Central_L3" parent="Pitch/Limits/FourSandbags" unique_id=1043493510 instance=ExtResource("23_4yxf6")]
+transform = Transform3D(-0.9947957, 0, 0.10188964, 0, 1, 0, -0.10188964, 0, -0.9947957, -22.93689, 0, -16.93725)
+
+[node name="FourSandbags_Entente_R" parent="Pitch/Limits/FourSandbags" unique_id=890540819 instance=ExtResource("23_4yxf6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.65758, 0, 16.27353)
+
+[node name="FourSandbags_Entente_R2" parent="Pitch/Limits/FourSandbags" unique_id=1221092429 instance=ExtResource("23_4yxf6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.441532, 0, 16.27353)
+
+[node name="FourSandbags_Entente_L" parent="Pitch/Limits/FourSandbags" unique_id=640180666 instance=ExtResource("23_4yxf6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.615018, 0, 16.27353)
+
+[node name="FourSandbags_Entente_L2" parent="Pitch/Limits/FourSandbags" unique_id=655586609 instance=ExtResource("23_4yxf6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.30685, 0, 16.14356)
+
+[node name="Logs" type="Node3D" parent="Pitch/Limits" unique_id=71602958]
+
+[node name="Logs_Entente_R" parent="Pitch/Limits/Logs" unique_id=1026112553 instance=ExtResource("23_xvtyr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.931728, 0, 16.348965)
+
+[node name="Logs_Entente_R2" parent="Pitch/Limits/Logs" unique_id=1226923833 instance=ExtResource("23_xvtyr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.732632, 0, 16.287033)
+
+[node name="Logs_Entente_L" parent="Pitch/Limits/Logs" unique_id=1418832204 instance=ExtResource("23_xvtyr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.932, 0, 16.349)
+
+[node name="Logs_Entente_L2" parent="Pitch/Limits/Logs" unique_id=1499746672 instance=ExtResource("23_xvtyr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.485422, 0, 16.349)
+
+[node name="Logs_Central_R" parent="Pitch/Limits/Logs" unique_id=514868238 instance=ExtResource("23_xvtyr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.931728, 0, -16.349)
+
+[node name="Logs_Central_R2" parent="Pitch/Limits/Logs" unique_id=1558685857 instance=ExtResource("23_xvtyr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.536816, 0, -16.349)
+
+[node name="Logs_Central_L" parent="Pitch/Limits/Logs" unique_id=1042593961 instance=ExtResource("23_xvtyr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.932, 0, -16.349)
+
+[node name="Logs_Central_L2" parent="Pitch/Limits/Logs" unique_id=1845898792 instance=ExtResource("23_xvtyr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.4139, 0, -16.349)
+
+[node name="LowMetal" type="Node3D" parent="Pitch/Limits" unique_id=1455712367]
+
+[node name="LowMetal_Central_R" parent="Pitch/Limits/LowMetal" unique_id=1180420055 instance=ExtResource("24_u7mjy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.464457, 0, -16.139894)
+
+[node name="LowMetal_Central_L" parent="Pitch/Limits/LowMetal" unique_id=2059486546 instance=ExtResource("24_u7mjy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.21035, 0, -16.072754)
+
+[node name="LowMetal_GoalA_R" parent="Pitch/Limits/LowMetal" unique_id=499726219 instance=ExtResource("24_u7mjy")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 26.22314, 0, -9.342257)
+
+[node name="LowMetal_GoalA_L" parent="Pitch/Limits/LowMetal" unique_id=2082437030 instance=ExtResource("24_u7mjy")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 26.286428, 0, 12.079239)
+
+[node name="LowMetal_GoalB_R" parent="Pitch/Limits/LowMetal" unique_id=940845268 instance=ExtResource("24_u7mjy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -26.249193, 0, 7.663247)
+
+[node name="LowMetal_GoalB_L" parent="Pitch/Limits/LowMetal" unique_id=670136483 instance=ExtResource("24_u7mjy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -26.030863, 0, -12.357207)
+
+[node name="LowMetal_Entente_R" parent="Pitch/Limits/LowMetal" unique_id=695449689 instance=ExtResource("24_u7mjy")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 11.394571, 0, 16.292437)
+
+[node name="LowMetal_Entente_L" parent="Pitch/Limits/LowMetal" unique_id=1274563701 instance=ExtResource("24_u7mjy")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -15.433738, 0, 16.154844)
+
+[node name="MetalWithSandbags" type="Node3D" parent="Pitch/Limits" unique_id=1234372698]
+
+[node name="MetalWithSandbags_Central_R" parent="Pitch/Limits/MetalWithSandbags" unique_id=703715237 instance=ExtResource("23_c5snn")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 26.220692, 0, -9.239688)
+
+[node name="MetalWithSandbags_Central_L" parent="Pitch/Limits/MetalWithSandbags" unique_id=310266605 instance=ExtResource("23_c5snn")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -25.97179, 0, -6.303779)
+
+[node name="MetalWithSandbags_Entente_R" parent="Pitch/Limits/MetalWithSandbags" unique_id=641509878 instance=ExtResource("23_c5snn")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 26.220692, 0, 6.039336)
+
+[node name="MetalWithSandbags_Entente_L" parent="Pitch/Limits/MetalWithSandbags" unique_id=890680322 instance=ExtResource("23_c5snn")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -25.97179, 0, 9.051525)
+
+[node name="SandbagLine" type="Node3D" parent="Pitch/Limits" unique_id=643626161]
+
+[node name="SandbagLine_Central_R" parent="Pitch/Limits/SandbagLine" unique_id=276052295 instance=ExtResource("23_4n42c")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 5.791371, 0, -16.356)
+
+[node name="SandbagLine_Central_L" parent="Pitch/Limits/SandbagLine" unique_id=1905495839 instance=ExtResource("23_4n42c")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -5.791, 0, -16.356)
+
+[node name="SandbagLine_Entente_R" parent="Pitch/Limits/SandbagLine" unique_id=822229865 instance=ExtResource("23_4n42c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.791371, 0, 16.35575)
+
+[node name="SandbagLine_Entente_L" parent="Pitch/Limits/SandbagLine" unique_id=518650808 instance=ExtResource("23_4n42c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.791, 0, 16.356)
+
+[node name="SandbagPile" type="Node3D" parent="Pitch/Limits" unique_id=1265638044]
+
+[node name="SandbagPile" parent="Pitch/Limits/SandbagPile" unique_id=1899244404 instance=ExtResource("29_x3rx7")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -26.067749, 0, -12.918051)
+
+[node name="SandbagPile2" parent="Pitch/Limits/SandbagPile" unique_id=1252740739 instance=ExtResource("29_x3rx7")]
+transform = Transform3D(-0.5562957, 0, 0.8309844, 0, 1, 0, -0.8309844, 0, -0.5562957, -26.341612, 0, -13.687307)
+
+[node name="SandbagPile3" parent="Pitch/Limits/SandbagPile" unique_id=632872462 instance=ExtResource("29_x3rx7")]
+transform = Transform3D(0.19423433, 0, 0.9809552, 0, 1, 0, -0.9809552, 0, 0.19423433, -26.434963, 0, -14.517965)
+
+[node name="SandbagPile4" parent="Pitch/Limits/SandbagPile" unique_id=307876329 instance=ExtResource("29_x3rx7")]
+transform = Transform3D(0.9990497, 0, -0.04358448, 0, 1, 0, 0.04358448, 0, 0.9990497, -24.850378, 0, -16.661795)
+
+[node name="SandbagPile5" parent="Pitch/Limits/SandbagPile" unique_id=1087119531 instance=ExtResource("29_x3rx7")]
+transform = Transform3D(0.8544406, 0, 0.519549, 0, 1, 0, -0.519549, 0, 0.8544406, -24.069916, 0, -16.90187)
+
+[node name="SandbagPile6" parent="Pitch/Limits/SandbagPile" unique_id=763079006 instance=ExtResource("29_x3rx7")]
+transform = Transform3D(0.97155744, 0, -0.23680422, 0, 1, 0, 0.23680422, 0, 0.97155744, -21.993677, 0, -16.423786)
+
+[node name="SandbagPile7" parent="Pitch/Limits/SandbagPile" unique_id=871008325 instance=ExtResource("29_x3rx7")]
+transform = Transform3D(-0.99921393, 0, 0.03964336, 0, 1, 0, -0.03964336, 0, -0.99921393, -20.449741, 0, 16.105665)
+
+[node name="SandbagPile21" parent="Pitch/Limits/SandbagPile" unique_id=1255326771 instance=ExtResource("29_x3rx7")]
+transform = Transform3D(-0.8633162, 0, -0.50466335, 0, 1, 0, 0.50466335, 0, -0.8633162, -18.101091, 0, 16.357925)
+
+[node name="SandbagPile8" parent="Pitch/Limits/SandbagPile" unique_id=930781192 instance=ExtResource("29_x3rx7")]
+transform = Transform3D(-0.85238457, 0, -0.5229153, 0, 1, 0, 0.5229153, 0, -0.85238457, -21.22925, 0, 16.348816)
+
+[node name="SandbagPile9" parent="Pitch/Limits/SandbagPile" unique_id=552213819 instance=ExtResource("29_x3rx7")]
+transform = Transform3D(-0.9724839, 0, 0.23297003, 0, 1, 0, -0.23297003, 0, -0.9724839, -22.062954, 0, 16.409164)
+
+[node name="SandbagPile10" parent="Pitch/Limits/SandbagPile" unique_id=1718945767 instance=ExtResource("29_x3rx7")]
+transform = Transform3D(-0.99921393, 0, 0.03964336, 0, 1, 0, -0.03964336, 0, -0.99921393, 21.654133, 0, 16.105665)
+
+[node name="SandbagPile11" parent="Pitch/Limits/SandbagPile" unique_id=926690474 instance=ExtResource("29_x3rx7")]
+transform = Transform3D(-0.85238457, 0, -0.5229153, 0, 1, 0, 0.5229153, 0, -0.85238457, 20.874624, 0, 16.348816)
+
+[node name="SandbagPile12" parent="Pitch/Limits/SandbagPile" unique_id=1758085656 instance=ExtResource("29_x3rx7")]
+transform = Transform3D(-0.9724839, 0, 0.23297003, 0, 1, 0, -0.23297003, 0, -0.9724839, 20.04092, 0, 16.409164)
+
+[node name="SandbagPile20" parent="Pitch/Limits/SandbagPile" unique_id=433679371 instance=ExtResource("29_x3rx7")]
+transform = Transform3D(-0.9724839, 0, 0.23297003, 0, 1, 0, -0.23297003, 0, -0.9724839, 19.379372, 0, 16.409164)
+
+[node name="SandbagPile13" parent="Pitch/Limits/SandbagPile" unique_id=128251792 instance=ExtResource("29_x3rx7")]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 26.3386, 0, 12.454602)
+
+[node name="SandbagPile14" parent="Pitch/Limits/SandbagPile" unique_id=1017749276 instance=ExtResource("29_x3rx7")]
+transform = Transform3D(-0.99590343, 0, 0.09042412, 0, 1, 0, -0.09042412, 0, -0.99590343, 22.195107, 0, -16.433117)
+
+[node name="SandbagPile15" parent="Pitch/Limits/SandbagPile" unique_id=2065478237 instance=ExtResource("29_x3rx7")]
+transform = Transform3D(-0.9921082, 0, -0.12538506, 0, 1, 0, 0.12538506, 0, -0.9921082, 22.989239, 0, -16.329739)
+
+[node name="SandbagPile16" parent="Pitch/Limits/SandbagPile" unique_id=1734241505 instance=ExtResource("29_x3rx7")]
+transform = Transform3D(0.7723567, 0, 0.63518894, 0, 1, 0, -0.63518894, 0, 0.7723567, 23.793488, 0, -16.034271)
+
+[node name="SandbagPile17" parent="Pitch/Limits/SandbagPile" unique_id=1089285359 instance=ExtResource("29_x3rx7")]
+transform = Transform3D(0.99528515, 0, -0.096992254, 0, 1, 0, 0.096992254, 0, 0.99528515, 24.610968, 0, -16.208721)
+
+[node name="SandbagPile18" parent="Pitch/Limits/SandbagPile" unique_id=1137575911 instance=ExtResource("29_x3rx7")]
+transform = Transform3D(-0.06355694, 0, -0.9979782, 0, 1, 0, 0.9979782, 0, -0.06355694, 26.286768, 0, -13.94643)
+
+[node name="SandbagPile19" parent="Pitch/Limits/SandbagPile" unique_id=1483601888 instance=ExtResource("29_x3rx7")]
+transform = Transform3D(0.18470618, 0, 0.9827937, 0, 1, 0, -0.9827937, 0, 0.18470618, 26.108667, 0, -14.621796)
+
+[node name="SandbagStack" type="Node3D" parent="Pitch/Limits" unique_id=1475065878]
+
+[node name="SandbagStack_Central_R" parent="Pitch/Limits/SandbagStack" unique_id=1861343740 instance=ExtResource("23_kpo4j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -16.127)
+
+[node name="SandbagStack_Central_L" parent="Pitch/Limits/SandbagStack" unique_id=810125846 instance=ExtResource("23_kpo4j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -16.127)
+
+[node name="SandbagStack_Entente_R" parent="Pitch/Limits/SandbagStack" unique_id=1609984964 instance=ExtResource("23_kpo4j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 16.12696)
+
+[node name="SandbagStack_Entente_L" parent="Pitch/Limits/SandbagStack" unique_id=2063853733 instance=ExtResource("23_kpo4j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 16.127)
+
+[node name="WallDirtEnd" type="Node3D" parent="Pitch/Limits" unique_id=539941102]
+
+[node name="WallDirtEnd_Central_R" parent="Pitch/Limits/WallDirtEnd" unique_id=86702793 instance=ExtResource("23_5jffn")]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 26.518, 0, -5.4199095)
+
+[node name="WallDirtEnd_Central_L" parent="Pitch/Limits/WallDirtEnd" unique_id=522539991 instance=ExtResource("23_5jffn")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -26.545664, 0, -3.939423)
+
+[node name="WallDirtEnd_Entente_R" parent="Pitch/Limits/WallDirtEnd" unique_id=1733246157 instance=ExtResource("23_5jffn")]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 26.518454, 0, 3.6635523)
+
+[node name="WallDirtEnd_Entente_L" parent="Pitch/Limits/WallDirtEnd" unique_id=1830993866 instance=ExtResource("23_5jffn")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -26.545664, 0, 5.2513328)
+
+[node name="Props" type="Node3D" parent="." unique_id=507040792]
+
+[node name="Tombstones" type="Node3D" parent="Props" unique_id=1057028667]
+
+[node name="Cross_A1" parent="Props/Tombstones" unique_id=569402315 instance=ExtResource("17_sxkr1")]
+transform = Transform3D(-0.99026805, 0, 0.13917318, 0, 1, 0, -0.13917318, 0, -0.99026805, -32, 0, -44)
+
+[node name="Cross_A2" parent="Props/Tombstones" unique_id=1205794596 instance=ExtResource("17_sxkr1")]
+transform = Transform3D(-0.96562105, -0.02588901, -0.25866142, -0.017441774, 0.99923867, -0.034899496, 0.25936797, -0.029188175, -0.9653374, -31, 0, -43)
+
+[node name="Cross_B1" parent="Props/Tombstones" unique_id=1143325094 instance=ExtResource("17_sxkr1")]
+transform = Transform3D(-0.97814757, 0, -0.20791179, 0, 1, 0, 0.20791179, 0, -0.97814757, -44, 0, -44)
+
+[node name="Slab_A1" parent="Props/Tombstones" unique_id=289361220 instance=ExtResource("18_fq0cl")]
+transform = Transform3D(-0.9986295, 0, -0.052335985, 0, 1, 0, 0.052335985, 0, -0.9986295, -30, 0, -46)
+
+[node name="Slab_B1" parent="Props/Tombstones" unique_id=1682598815 instance=ExtResource("18_fq0cl")]
+transform = Transform3D(-0.99433863, 0.019180795, 0.10451257, 0.017449748, 0.9996954, -0.017452406, -0.10481549, -0.015529883, -0.99437046, -45, 0, -45)
+
+[node name="Slab_B2" parent="Props/Tombstones" unique_id=920768442 instance=ExtResource("18_fq0cl")]
+transform = Transform3D(-0.99939084, -0.034899496, -8.742278e-08, -0.034899496, 0.99939084, 0, 8.736952e-08, 3.0510108e-09, -1, -46, 0, -47)
+
+[node name="Flags" type="Node3D" parent="Props" unique_id=1246407286]
+
+[node name="HangingFlag" parent="Props/Flags" unique_id=889725556 instance=ExtResource("34_6heos")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -32.128056, 5.014246, -42.370544)
+
+[node name="MedKits" type="Node3D" parent="Props" unique_id=339356680]
+
+[node name="MedKit_Central" parent="Props/MedKits" unique_id=1865785279 instance=ExtResource("37_clvyn")]
+transform = Transform3D(1, 0, 0, 0, 0.969623, 0.24460417, 0, -0.24460417, 0.969623, 0.88977206, 0.13578469, -17.201693)
+
+[node name="MedKit_Entente" parent="Props/MedKits" unique_id=1474020942 instance=ExtResource("37_clvyn")]
+transform = Transform3D(-1, 2.1445453e-08, -8.4751605e-08, 0, 0.96944535, 0.24530739, 8.742278e-08, 0.24530739, -0.96944535, -0.85690755, 0.13578469, 17.188408)
+
+[node name="TeamMarkers" type="Node3D" parent="Props" unique_id=476202714]
+
+[node name="IronCross" parent="Props/TeamMarkers" unique_id=1082592807 instance=ExtResource("38_5psol")]
+transform = Transform3D(-5, 4.3711393e-07, -1.6299804e-15, 1.00718346e-07, 1.1520835, 4.8654604, 4.2535208e-07, 4.8654604, -1.1520835, -0.7882885, 0.14940041, -17.283768)
+
+[node name="KingAlbertI" parent="Props/TeamMarkers" unique_id=951525192 instance=ExtResource("39_m4llh")]
+transform = Transform3D(-0.025, 0, -3.774895e-09, 0, 0.025, 0, 3.774895e-09, 0, -0.025, 1.2967123, 0.3910603, 17.366558)
+
+[node name="AmmoBoxes" type="Node3D" parent="Props" unique_id=1491584503]
+
+[node name="AmmoBox_Central" parent="Props/AmmoBoxes" unique_id=1284463288 instance=ExtResource("40_m4llh")]
+transform = Transform3D(0.759378, 0, 0.65064967, 0, 1, 0, -0.65064967, 0, 0.759378, -1.8816327, 0, -16.246275)
+
+[node name="AmmoBox_Entente" parent="Props/AmmoBoxes" unique_id=4060740 instance=ExtResource("40_m4llh")]
+transform = Transform3D(-0.8255973, 0, 0.5642598, 0, 1, 0, -0.5642598, 0, -0.8255973, -1.3486713, 0, 16.761755)
+
+[node name="Cameras" type="Node3D" parent="." unique_id=435194935]
+
+[node name="CameraRig" type="Node3D" parent="Cameras" unique_id=2104458001 node_paths=PackedStringArray("target")]
+script = ExtResource("13_1p5hy")
+target = NodePath("../../Ball")
+cam_y = 9.0
+cam_z = 22.5
+
+[node name="Camera" type="Camera3D" parent="Cameras/CameraRig" unique_id=319880732]
+transform = Transform3D(1, 0, 0, 0, 0.9063078, 0.4226183, 0, -0.4226183, 0.9063078, 0, 6.5724754, 6.1378565)
+current = true
+fov = 65.0
+near = 0.1
+far = 500.0
+
+[node name="Players" type="Node3D" parent="." unique_id=1553332912]
+
+[node name="TeamEntente" type="Node3D" parent="Players" unique_id=502477358]
+
+[node name="Goalkeeper" parent="Players/TeamEntente" unique_id=985702515 instance=ExtResource("44_egk")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -23, 1, 0)
+
+[node name="DefenderRight" parent="Players/TeamEntente" unique_id=336436433 instance=ExtResource("43_eplyr")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -15, 1, 4)
+dribble_ahead = 0.6
+dribble_side_offset = 0.0
+
+[node name="DefenderLeft" parent="Players/TeamEntente" unique_id=2085840282 instance=ExtResource("43_eplyr")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -15, 1, -4)
+dribble_ahead = 0.6
+dribble_side_offset = 0.0
+
+[node name="MidfielderRight" parent="Players/TeamEntente" unique_id=104504516 instance=ExtResource("43_eplyr")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -6, 1, 3)
+dribble_ahead = 0.6
+dribble_side_offset = 0.0
+
+[node name="MidfielderLeft" parent="Players/TeamEntente" unique_id=1636672338 instance=ExtResource("43_eplyr")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -6, 1, -3)
+dribble_ahead = 0.6
+dribble_side_offset = 0.0
+
+[node name="TeamCentral" type="Node3D" parent="Players" unique_id=1208458089]
+
+[node name="Goalkeeper" parent="Players/TeamCentral" unique_id=1605336839 instance=ExtResource("41_cgk")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 23, 1, 0)
+
+[node name="DefenderRight" parent="Players/TeamCentral" unique_id=1885706518 instance=ExtResource("40_cplyr")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 15, 1, 4)
+
+[node name="DefenderLeft" parent="Players/TeamCentral" unique_id=448060930 instance=ExtResource("40_cplyr")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 15, 1, -4)
+
+[node name="MidfielderRight" parent="Players/TeamCentral" unique_id=2048918399 instance=ExtResource("40_cplyr")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 6, 1, 3)
+is_selected_player = true
+
+[node name="MidfielderLeft" parent="Players/TeamCentral" unique_id=1893789549 instance=ExtResource("40_cplyr")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 6, 1, -3)
+
+[node name="Ball" type="RigidBody3D" parent="." unique_id=1068174083 groups=["Ball"]]
+collision_layer = 2
+collision_mask = 9
+mass = 1.2
+physics_material_override = SubResource("PhysicsMaterial_frkhe")
+contact_monitor = true
+max_contacts_reported = 8
+linear_damp = 1.8
+angular_damp = 2.5
+
+[node name="BallMesh" parent="Ball" unique_id=1977618144 instance=ExtResource("13_frkhe")]
+
+[node name="Ball_m_ball_0" parent="Ball/BallMesh/FAB converted model/Ball_fbx/RootNode/Ball" parent_id_path=PackedInt32Array(1977618144, 684325509) index="0" unique_id=168825101]
+transform = Transform3D(0.222, 0, 0, 0, 0.222, 0, 0, 0, 0.222, 0, 0, 0)
+layers = 2
+
+[node name="BallCollision" type="CollisionShape3D" parent="Ball" unique_id=1272938794]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00044915453, 0.0694414, 0)
+shape = SubResource("SphereShape3D_frkhe")
+
+[editable path="Ball/BallMesh"]

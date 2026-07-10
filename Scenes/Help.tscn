@@ -1,0 +1,156 @@
+[gd_scene format=3 uid="uid://dogc00hgme1wy"]
+
+[ext_resource type="Texture2D" uid="uid://bthgyxkehccn" path="res://Assets/img/Help.png" id="1_loy5b"]
+[ext_resource type="Script" uid="uid://cvhq6o1tgf2sq" path="res://Script/help.gd" id="1_w4gxy"]
+[ext_resource type="Texture2D" uid="uid://d1wfe3rie6ei2" path="res://Assets/img/Back.png" id="2_kukc8"]
+[ext_resource type="Texture2D" uid="uid://b2ol8qukv8u35" path="res://Assets/img/keyboard/Arrow Down.png" id="4_o6sw3"]
+[ext_resource type="Texture2D" uid="uid://brp8ohyhc5652" path="res://Assets/img/keyboard/Arrow Up.png" id="5_28xs0"]
+[ext_resource type="Texture2D" uid="uid://dk6f1pah4vo8d" path="res://Assets/img/keyboard/Arrow Left.png" id="6_matyx"]
+[ext_resource type="Texture2D" uid="uid://nac46qdl6atn" path="res://Assets/img/keyboard/Arrow Right.png" id="7_qq4sw"]
+[ext_resource type="Texture2D" uid="uid://cbpujk3b5hd10" path="res://Assets/img/keyboard/Z.png" id="8_rwg5s"]
+[ext_resource type="Texture2D" uid="uid://kptwiu123i1h" path="res://Assets/img/keyboard/X.png" id="9_risl3"]
+[ext_resource type="FontFile" uid="uid://cixvv786f06j5" path="res://Assets/Fonts/CAT Hohenzollern.ttf" id="10_matyx"]
+[ext_resource type="Texture2D" uid="uid://do6fj7qrarut0" path="res://Assets/img/keyboard/Q.png" id="11_qq4sw"]
+[ext_resource type="Texture2D" uid="uid://dpqow75u6qonw" path="res://Assets/img/keyboard/Escape.png" id="12_rwg5s"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qq4sw"]
+font = ExtResource("10_matyx")
+font_size = 48
+font_color = Color(0, 0, 0, 1)
+
+[node name="Help" type="Control" unique_id=1620075207]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_w4gxy")
+
+[node name="Help" type="Sprite2D" parent="." unique_id=590350426]
+position = Vector2(960, 540)
+texture = ExtResource("1_loy5b")
+
+[node name="Back" type="TextureButton" parent="." unique_id=1893819309]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 22.0
+offset_top = 20.0
+offset_right = -1698.0
+offset_bottom = -957.5
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("2_kukc8")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="ArrowDown" type="Sprite2D" parent="." unique_id=1219711213]
+position = Vector2(1405, 395)
+texture = ExtResource("4_o6sw3")
+
+[node name="ArrowUp" type="Sprite2D" parent="." unique_id=1390558556]
+position = Vector2(1405, 325)
+texture = ExtResource("5_28xs0")
+
+[node name="ArrowLeft" type="Sprite2D" parent="." unique_id=1976904653]
+position = Vector2(1335, 395)
+texture = ExtResource("6_matyx")
+
+[node name="ArrowRight" type="Sprite2D" parent="." unique_id=735544859]
+position = Vector2(1475, 395)
+texture = ExtResource("7_qq4sw")
+
+[node name="Z" type="Sprite2D" parent="." unique_id=418730082]
+position = Vector2(1405, 520)
+texture = ExtResource("8_rwg5s")
+
+[node name="X" type="Sprite2D" parent="." unique_id=1690658805]
+position = Vector2(1405, 620)
+texture = ExtResource("9_risl3")
+
+[node name="Q" type="Sprite2D" parent="." unique_id=2139740636]
+position = Vector2(1405, 720)
+texture = ExtResource("11_qq4sw")
+
+[node name="Escape" type="Sprite2D" parent="." unique_id=1726476429]
+position = Vector2(1405, 820)
+texture = ExtResource("12_rwg5s")
+
+[node name="MoveLabel" type="Label" parent="." unique_id=355313050]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1595.0
+offset_top = 325.0
+offset_right = -68.0
+offset_bottom = -694.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "MOVE_LABEL"
+label_settings = SubResource("LabelSettings_qq4sw")
+horizontal_alignment = 1
+
+[node name="PassLabel" type="Label" parent="." unique_id=743190798]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1595.0
+offset_top = 488.0
+offset_right = -68.0
+offset_bottom = -531.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "PASS_LABEL"
+label_settings = SubResource("LabelSettings_qq4sw")
+horizontal_alignment = 1
+
+[node name="ShootLabel" type="Label" parent="." unique_id=1429817455]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1589.0
+offset_top = 588.0
+offset_right = -62.0
+offset_bottom = -431.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SHOOT_LABEL"
+label_settings = SubResource("LabelSettings_qq4sw")
+horizontal_alignment = 1
+
+[node name="ChangeLabel" type="Label" parent="." unique_id=1441502981]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1578.0
+offset_top = 688.0
+offset_right = -51.0
+offset_bottom = -331.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "CHANGE_LABEL"
+label_settings = SubResource("LabelSettings_qq4sw")
+horizontal_alignment = 1
+
+[node name="PauseLabel" type="Label" parent="." unique_id=308687179]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1578.0
+offset_top = 788.0
+offset_right = -51.0
+offset_bottom = -231.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "PAUSE_LABEL"
+label_settings = SubResource("LabelSettings_qq4sw")
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

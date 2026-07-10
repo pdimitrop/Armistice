@@ -1,0 +1,13 @@
+KEY,en,el,de,fr,it,es,ru,sr_Cyr,sh,bg
+HELP_BUTTON,Help,Βοήθεια,Hilfe,Aide,Aiuto,Ayuda,Помощь,Помоћ,Pomoć,Помощ
+START_BUTTON,Start,Έναρξη,Starten,Jouer,Inizia,Empezar,Начать,Започни,Započni,Старт
+SELECT_SIDE,Pick your side,Επιλέξτε την πλευρά σας,Seitenauswahl,Sélection de camp,Scegli una parte,Selección de bando,Выбор стороны,Избор стране,Odaberite stranu,Избор на страна
+CENTRAL_BUTTON,Central Powers,Κεντρικές Δυνάμεις,Mittelmächte,Empires centraux,Imperi centrali,Potencias Centrales,Центральные державы,Централне силе,Centralne sile,Централни сили
+ENTENTE_BUTTON,Allied Powers,Αντάντ,Entente,L'Entente,Trimplice intesa,Aliados,Союзники,Савезници,Saveznici,Антанта
+MOVE_LABEL,Movement,Μετακίνηση,Bewegung,Déplacement,Movimento,Movimiento,Передвижение,Кретање,Kretanje,Движение
+PASS_LABEL,Pass,Πάσα,Paßen,Passe,Passaggio,Pase,Пас,Додавање,Dodavanje,Подаване
+SHOOT_LABEL,Shoot,Σουτ,Schuß,Tir,Tiro,Tiro,Удар,Шут,Udarac,Удар
+CHANGE_LABEL,Change player,Αλλαγή παίκτη,Spieler wechseln,Changer de joueur,Cambia giocatore,Cambiar jugador,Сменя игрока,Промена играча,Promjena igrača,Смяна на играч
+PAUSE_LABEL,Pause,Παύση,Pause,Pause,Pausa,Pausa,Пауза,Пауза,Pauza,Пауза
+MAIN_MENU,Main Menu,Κεντρικό Μενού,Hauptmenü,Menu principal,Menu principale,Menú principal,Главное меню,Главни мени,Glavni izbornik,Главно меню
+PLAY_BUTTON,Play,Παίξτε,Spielen,Jouer,Giocare,Jugar,Играть,Играти,Igrati,Играй

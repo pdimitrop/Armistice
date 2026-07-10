@@ -1,0 +1,170 @@
+[gd_scene format=3 uid="uid://qc7cuwr6wnsw"]
+
+[ext_resource type="Script" uid="uid://xhxepkm55un1" path="res://Script/main_menu.gd" id="1_ce3w2"]
+[ext_resource type="Texture2D" uid="uid://7atruk77s6c5" path="res://Assets/img/mainbg.jpg" id="2_n45e2"]
+[ext_resource type="FontFile" uid="uid://cixvv786f06j5" path="res://Assets/Fonts/CAT Hohenzollern.ttf" id="3_opfnp"]
+[ext_resource type="Texture2D" uid="uid://cn5ee5mj00tf5" path="res://Assets/img/x.png" id="4_cp0ys"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fu7sn"]
+texture = ExtResource("2_n45e2")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+modulate_color = Color(0.5489626, 0.5489626, 0.54896253, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7vrkn"]
+bg_color = Color(0.5019608, 0, 0, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jix8l"]
+bg_color = Color(0.2509804, 0, 0, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_glbon"]
+bg_color = Color(0.3764706, 0, 0, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
+
+[node name="MainMenu" type="Control" unique_id=696331818]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_ce3w2")
+
+[node name="BG" type="Panel" parent="." unique_id=125278325]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_fu7sn")
+
+[node name="Start" type="Button" parent="." unique_id=1799432618]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -70.0
+offset_top = 150.0
+offset_right = 70.0
+offset_bottom = 220.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_opfnp")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_7vrkn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jix8l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_glbon")
+text = "START_BUTTON"
+
+[node name="Help" type="Button" parent="." unique_id=905772784]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -101.0
+offset_top = 900.0
+offset_right = 101.0
+offset_bottom = 970.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_opfnp")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_7vrkn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jix8l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_glbon")
+text = "HELP_BUTTON"
+
+[node name="Exit" type="Button" parent="." unique_id=2117816124]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 17.0
+offset_right = 67.0
+offset_bottom = 67.0
+theme_override_colors/icon_pressed_color = Color(0.76737565, 0.76737565, 0.82665706, 1)
+theme_override_colors/icon_hover_color = Color(0.9309246, 0.9309246, 1, 1)
+icon = ExtResource("4_cp0ys")
+flat = true
+expand_icon = true
+
+[node name="Title" type="Label" parent="." unique_id=1942241378]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -292.0
+offset_top = 240.0
+offset_right = 292.0
+offset_bottom = 415.0
+grow_horizontal = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("3_opfnp")
+theme_override_font_sizes/font_size = 128
+text = "Armistice"
+horizontal_alignment = 1
+
+[node name="Copyight" type="Label" parent="." unique_id=1995650344]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 17.0
+offset_top = -44.0
+offset_right = 371.0
+offset_bottom = -21.0
+grow_vertical = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+text = "© Copyright 2026 Paraskevas I. Dimitropoulos"
+
+[node name="Version" type="Label" parent="." unique_id=1527368501]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 1775.0
+offset_top = -44.0
+offset_right = 1902.0
+offset_bottom = -21.0
+grow_vertical = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+text = "Version 0.1.0"
+horizontal_alignment = 2
+
+[node name="Language" type="OptionButton" parent="." unique_id=776830270]
+layout_mode = 0
+offset_left = 1712.0
+offset_top = 17.0
+offset_right = 1862.0
+offset_bottom = 67.0
+
+[node name="Flag" type="TextureButton" parent="." unique_id=935339468]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 0
+offset_left = 1648.0
+offset_top = 17.0
+offset_right = 1698.0
+offset_bottom = 67.0
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Help" to="." method="_on_help_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[connection signal="item_selected" from="Language" to="." method="_on_language_item_selected"]

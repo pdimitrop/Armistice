@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://b3e40yu3t2h0"]
+
+[ext_resource type="Script" path="res://Script/goalkeeper.gd" id="1_gkscr"]
+[ext_resource type="PackedScene" uid="uid://bj4bst112sd3d" path="res://Assets/Characters/Central/CentralAnimated/Goalkeeper Idle.fbx" id="2_gkidle"]
+[ext_resource type="Script" path="res://Script/goalkeeper_anim_loader.gd" id="3_gkaload"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_gk"]
+
+[node name="CentralGoalkeeper" type="CharacterBody3D"]
+collision_layer = 8
+collision_mask = 15
+script = ExtResource("1_gkscr")
+goal_x = 23.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_gk")
+
+[node name="GoalkeeperModel" parent="." instance=ExtResource("2_gkidle")]
+
+[node name="AnimLoader" type="Node" parent="."]
+script = ExtResource("3_gkaload")
+
+[editable path="GoalkeeperModel"]

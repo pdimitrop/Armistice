@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://82554yy7voe5"]
+
+[ext_resource type="Script" path="res://Script/goalkeeper.gd" id="1_gkscr"]
+[ext_resource type="Script" path="res://Script/entente_goalkeeper_animator.gd" id="2_egkanim"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_egk"]
+
+[node name="EntenteGoalkeeper" type="CharacterBody3D"]
+collision_layer = 8
+collision_mask = 15
+script = ExtResource("1_gkscr")
+goal_x = -23.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_egk")
+
+[node name="AnimationPlayer" type="Node3D" parent="."]
+script = ExtResource("2_egkanim")

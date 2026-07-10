@@ -1,0 +1,147 @@
+[gd_scene format=3 uid="uid://5uhegvyhl3p7"]
+
+[ext_resource type="Texture2D" uid="uid://dv5uy3ty4drkf" path="res://Assets/img/side-selection.png" id="1_bqcqe"]
+[ext_resource type="Script" uid="uid://iv58xk1hg4y2" path="res://Script/SideSelection.gd" id="1_ust1a"]
+[ext_resource type="Texture2D" uid="uid://c5oe1b5vikvps" path="res://Assets/img/Tatzenkreuz.png" id="2_rqtql"]
+[ext_resource type="Texture2D" uid="uid://bb1fctabljicn" path="res://Assets/img/Entente.png" id="3_3cj8m"]
+[ext_resource type="FontFile" uid="uid://cixvv786f06j5" path="res://Assets/Fonts/CAT Hohenzollern.ttf" id="4_t661b"]
+[ext_resource type="Texture2D" uid="uid://dmi6mujcjjjag" path="res://Assets/img/TatzenkreuzClicked.png" id="4_wwnmv"]
+[ext_resource type="Texture2D" uid="uid://d1wfe3rie6ei2" path="res://Assets/img/Back.png" id="5_5svip"]
+[ext_resource type="Texture2D" uid="uid://bebcdhw272cc3" path="res://Assets/img/EntenteClicked.png" id="6_pfl0n"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_5svip"]
+font = ExtResource("4_t661b")
+font_size = 36
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wwnmv"]
+bg_color = Color(0.5019608, 0, 0, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pfl0n"]
+bg_color = Color(0.2509804, 0, 0, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mhmqn"]
+bg_color = Color(0.3764706, 0, 0, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
+
+[node name="SideSelection" type="Control" unique_id=1831376830]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_ust1a")
+
+[node name="SideSelection" type="Sprite2D" parent="." unique_id=1631174689]
+position = Vector2(960, 540)
+texture = ExtResource("1_bqcqe")
+
+[node name="CentralIcon" type="TextureButton" parent="." unique_id=2047324372]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 996.0
+offset_top = 695.0
+offset_right = -124.0
+offset_bottom = 415.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("2_rqtql")
+texture_focused = ExtResource("4_wwnmv")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="EntenteIcon" type="TextureButton" parent="." unique_id=962568993]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 746.0
+offset_top = 695.0
+offset_right = 80.0
+offset_bottom = 869.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.135, 0.135)
+texture_normal = ExtResource("3_3cj8m")
+texture_focused = ExtResource("6_pfl0n")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="." unique_id=200320833]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 844.0
+offset_top = 456.0
+offset_right = -861.0
+offset_bottom = -574.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SELECT_SIDE"
+label_settings = SubResource("LabelSettings_5svip")
+horizontal_alignment = 1
+
+[node name="Back" type="TextureButton" parent="." unique_id=1435060348]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 154.0
+offset_top = 93.0
+offset_right = -1366.0
+offset_bottom = -782.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("5_5svip")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Play" type="Button" parent="." unique_id=337113465]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 896.0
+offset_top = 1008.0
+offset_right = -896.0
+offset_bottom = -41.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("4_t661b")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_wwnmv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pfl0n")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mhmqn")
+text = "PLAY_BUTTON"
+icon_alignment = 1
+
+[connection signal="pressed" from="CentralIcon" to="." method="_on_central_icon_pressed"]
+[connection signal="pressed" from="EntenteIcon" to="." method="_on_entente_icon_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]

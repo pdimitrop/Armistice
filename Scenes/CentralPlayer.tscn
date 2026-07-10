@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://b3kf5x8m2q7t"]
+
+[ext_resource type="Script" uid="uid://bxbob3jyexhyw" path="res://Script/player.gd" id="1_plr"]
+[ext_resource type="PackedScene" uid="uid://cndpuuhq0gg18" path="res://Assets/Characters/Central/CentralAnimated/Offensive Idle.fbx" id="2_offidle"]
+[ext_resource type="Script" path="res://Script/central_anim_loader.gd" id="3_caload"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_cplyr"]
+
+[node name="CentralPlayer" type="CharacterBody3D"]
+collision_layer = 4
+collision_mask = 13
+script = ExtResource("1_plr")
+idle_clip = &"standing"
+idle_pose_time = 0.0
+dribble_side_offset = 0.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_cplyr")
+
+[node name="CentralModel" parent="." instance=ExtResource("2_offidle")]
+
+[node name="AnimLoader" type="Node" parent="."]
+script = ExtResource("3_caload")
+
+[editable path="CentralModel"]
